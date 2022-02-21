@@ -20,39 +20,39 @@
             <h2>You <i style="padding: 0;">know</i> you want to.</h2>
             <div class="form-container">
                 <h2>Let's do this!</h2>
-                <form action="" method="post">
+                <form action="#" method="post">
                     <ul>
                         <li>
                             <label for="name">FIRST NAME</label>
-                            <input type="text" name="name" id="name">
+                            <input placeholder="Your name" minlength="3" required type="text" name="name" id="name">
                         </li>
                         <li>
                             <label for="last">LAST NAME</label>
-                            <input type="text" name="last" id="last">
+                            <input placeholder="Your last name" minlength="3" required type="text" name="last" id="last">
                         </li>
                         <li>
                             <label for="mail">EMAIL</label>
-                            <input type="email" name="mail" id="mail">
+                            <input placeholder="email@example.com" required type="email" name="mail" id="mail">
                         </li>
                         <li>
                             <label for="tel">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel">
+                            <input placeholder="+123456789" required type="tel" name="tel" id="tel">
                         </li>
                         <li>
                             <label for="pass">PASWORD</label>
-                            <input type="password" name="pass" id="pass">
+                            <input placeholder="********" title="Please use at least 1 uppercase, lowercase, number, and symbol min 8 chars and max 12 chars" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required type="password" name="pass" id="pass">
                         </li>
                         <li>
                             <label for="pass-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="pass-confirm" id="pass-confirm">
+                            <input placeholder="********" title="Please use at least 1 uppercase, lowercase, number, and symbol min 8 chars and max 12 chars" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required type="password" name="pass-confirm" id="pass-confirm">
                         </li>
                     </ul>
+                </div>
+                    <input id="btn" type="submit" value="Create Account">
+                    <div style="display: flex;">
                 </form>
-            </div>
-            <input id="btn" type="submit" value="Create Account">
-            <div style="display: flex;">
                 <h3>Already have an account?</h3>
-                <a href="">Log in</a>
+                <a href="#">Log in</a>
             </div>
         </div>
     </div>
